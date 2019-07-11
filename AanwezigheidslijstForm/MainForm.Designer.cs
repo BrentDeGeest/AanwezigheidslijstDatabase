@@ -43,7 +43,7 @@
             this.ViewButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ViewButton.Location = new System.Drawing.Point(77, 89);
             this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(145, 33);
+            this.ViewButton.Size = new System.Drawing.Size(145, 35);
             this.ViewButton.TabIndex = 0;
             this.ViewButton.Text = "View";
             this.ViewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -70,7 +70,7 @@
             this.AddDeelnemerButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AddDeelnemerButton.Location = new System.Drawing.Point(77, 380);
             this.AddDeelnemerButton.Name = "AddDeelnemerButton";
-            this.AddDeelnemerButton.Size = new System.Drawing.Size(145, 33);
+            this.AddDeelnemerButton.Size = new System.Drawing.Size(145, 35);
             this.AddDeelnemerButton.TabIndex = 2;
             this.AddDeelnemerButton.Text = "Add Deelnemer";
             this.AddDeelnemerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -85,7 +85,7 @@
             this.AddOpleidingButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AddOpleidingButton.Location = new System.Drawing.Point(77, 302);
             this.AddOpleidingButton.Name = "AddOpleidingButton";
-            this.AddOpleidingButton.Size = new System.Drawing.Size(145, 33);
+            this.AddOpleidingButton.Size = new System.Drawing.Size(145, 35);
             this.AddOpleidingButton.TabIndex = 3;
             this.AddOpleidingButton.Text = "Add Opleiding";
             this.AddOpleidingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -100,7 +100,7 @@
             this.AddDocentButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AddDocentButton.Location = new System.Drawing.Point(77, 341);
             this.AddDocentButton.Name = "AddDocentButton";
-            this.AddDocentButton.Size = new System.Drawing.Size(145, 33);
+            this.AddDocentButton.Size = new System.Drawing.Size(145, 35);
             this.AddDocentButton.TabIndex = 4;
             this.AddDocentButton.Text = "Add Docent";
             this.AddDocentButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,7 +121,7 @@
             this.OpleidingComboBox.Name = "OpleidingComboBox";
             this.OpleidingComboBox.Size = new System.Drawing.Size(270, 28);
             this.OpleidingComboBox.TabIndex = 5;
-            this.OpleidingComboBox.Text = "Opleiding1";
+            this.OpleidingComboBox.Text = "Opleiding";
             // 
             // MainForm
             // 
