@@ -33,6 +33,7 @@ namespace AanwezigheidslijstForm
         {
 
         }
+
         private static void Connection_StateChange(object sender, System.Data.StateChangeEventArgs e)
         {
             Console.WriteLine("\nDB connection status: " + e.CurrentState + "\n");
