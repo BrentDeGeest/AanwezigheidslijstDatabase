@@ -69,7 +69,6 @@
             this.OpleidingsInstellingTextBox.Size = new System.Drawing.Size(311, 31);
             this.OpleidingsInstellingTextBox.TabIndex = 1;
             this.OpleidingsInstellingTextBox.Text = "Opleidingsinstelling";
-            this.OpleidingsInstellingTextBox.TextChanged += new System.EventHandler(this.OpleidingsInstellingTextBox_TextChanged);
             // 
             // OpleidingTextBox
             // 
@@ -81,7 +80,6 @@
             this.OpleidingTextBox.Size = new System.Drawing.Size(311, 31);
             this.OpleidingTextBox.TabIndex = 2;
             this.OpleidingTextBox.Text = "Opleiding";
-            this.OpleidingTextBox.TextChanged += new System.EventHandler(this.OpleidingTextBox_TextChanged);
             // 
             // ContactPersoonTextBox
             // 
@@ -155,7 +153,6 @@
             this.StartDatumTextBox.Size = new System.Drawing.Size(200, 26);
             this.StartDatumTextBox.TabIndex = 9;
             this.StartDatumTextBox.Text = "Start Datum";
-            this.StartDatumTextBox.TextChanged += new System.EventHandler(this.StartDatumTextBox_TextChanged);
             // 
             // EindDatumTextBox
             // 

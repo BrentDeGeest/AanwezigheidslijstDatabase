@@ -127,7 +127,6 @@
             this.OpleidingComboBox.Name = "OpleidingComboBox";
             this.OpleidingComboBox.Size = new System.Drawing.Size(121, 33);
             this.OpleidingComboBox.Text = "Opleiding";
-            this.OpleidingComboBox.Click += new System.EventHandler(this.OpleidingComboBox_Click);
             // 
             // AddDeelnemerForm
             // 
