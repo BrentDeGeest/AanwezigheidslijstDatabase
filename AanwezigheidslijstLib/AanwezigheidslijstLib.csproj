@@ -55,5 +55,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AanwezigheidslijstForm\AanwezigheidslijstForm.csproj">
+      <Project>{319cc734-0592-4a61-9f15-2f519795651a}</Project>
+      <Name>AanwezigheidslijstForm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,6 +8,9 @@ namespace AanwezigheidslijstLib
 {
     public class Class1
     {
+        public void funct()
+        {
 
+        }
     }
 }
