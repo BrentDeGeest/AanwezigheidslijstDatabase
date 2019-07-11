@@ -35,16 +35,22 @@
             // 
             // AddDocentButton
             // 
+            this.AddDocentButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddDocentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddDocentButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.AddDocentButton.Location = new System.Drawing.Point(48, 370);
             this.AddDocentButton.Name = "AddDocentButton";
             this.AddDocentButton.Size = new System.Drawing.Size(87, 36);
             this.AddDocentButton.TabIndex = 0;
             this.AddDocentButton.Text = "Add";
-            this.AddDocentButton.UseVisualStyleBackColor = true;
+            this.AddDocentButton.UseVisualStyleBackColor = false;
             this.AddDocentButton.Click += new System.EventHandler(this.AddDocentButton_Click);
             // 
             // NaamTextBox
             // 
+            this.NaamTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.NaamTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NaamTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.NaamTextBox.Location = new System.Drawing.Point(52, 75);
             this.NaamTextBox.Name = "NaamTextBox";
             this.NaamTextBox.Size = new System.Drawing.Size(316, 38);
@@ -53,6 +59,9 @@
             // 
             // BedrijfTextBox
             // 
+            this.BedrijfTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.BedrijfTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BedrijfTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.BedrijfTextBox.Location = new System.Drawing.Point(52, 119);
             this.BedrijfTextBox.Name = "BedrijfTextBox";
             this.BedrijfTextBox.Size = new System.Drawing.Size(316, 38);
@@ -63,10 +72,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BedrijfTextBox);
             this.Controls.Add(this.NaamTextBox);
             this.Controls.Add(this.AddDocentButton);
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "AddDocentForm";
             this.Text = "AddDocentForm";
             this.ResumeLayout(false);

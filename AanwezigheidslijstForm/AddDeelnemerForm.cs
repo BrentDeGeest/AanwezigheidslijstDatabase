@@ -20,7 +20,6 @@ namespace AanwezigheidslijstForm
             InitializeComponent();
         }
 
-
         public static SqlConnection GetConnection()
         {
             var connectionStringSetting = ConfigurationManager.ConnectionStrings["AanwezigheidslijstDatabase"];
@@ -84,11 +83,6 @@ namespace AanwezigheidslijstForm
         private static void Connection_StateChange(object sender, System.Data.StateChangeEventArgs e)
         {
             Console.WriteLine("\nDB connection status: " + e.CurrentState + "\n");
-        }
-
-        private void OpleidingComboBox_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -23,7 +23,6 @@ namespace AanwezigheidslijstForm
             _deelnemers = new List<Deelnemer>();
         }
 
-
         public static SqlConnection GetConnection()
         {
             var connectionStringSetting = ConfigurationManager.ConnectionStrings["AanwezigheidslijstDatabase"];
@@ -32,7 +31,6 @@ namespace AanwezigheidslijstForm
 
             return connection;
         }
-
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -75,7 +73,6 @@ namespace AanwezigheidslijstForm
             catch (Exception)
             {
 
-                
             }
         }
 

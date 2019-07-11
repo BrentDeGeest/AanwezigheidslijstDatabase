@@ -38,70 +38,96 @@
             // 
             // ViewButton
             // 
+            this.ViewButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ViewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ViewButton.Location = new System.Drawing.Point(77, 89);
             this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(102, 33);
+            this.ViewButton.Size = new System.Drawing.Size(145, 33);
             this.ViewButton.TabIndex = 0;
             this.ViewButton.Text = "View";
-            this.ViewButton.UseVisualStyleBackColor = true;
+            this.ViewButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ViewButton.UseVisualStyleBackColor = false;
             this.ViewButton.Click += new System.EventHandler(this.Button1_Click);
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(511, 89);
+            this.listBox1.Location = new System.Drawing.Point(518, 89);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(210, 324);
+            this.listBox1.Size = new System.Drawing.Size(270, 324);
             this.listBox1.TabIndex = 1;
             // 
             // AddDeelnemerButton
             // 
+            this.AddDeelnemerButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddDeelnemerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddDeelnemerButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddDeelnemerButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AddDeelnemerButton.Location = new System.Drawing.Point(77, 380);
             this.AddDeelnemerButton.Name = "AddDeelnemerButton";
-            this.AddDeelnemerButton.Size = new System.Drawing.Size(137, 33);
+            this.AddDeelnemerButton.Size = new System.Drawing.Size(145, 33);
             this.AddDeelnemerButton.TabIndex = 2;
             this.AddDeelnemerButton.Text = "Add Deelnemer";
-            this.AddDeelnemerButton.UseVisualStyleBackColor = true;
+            this.AddDeelnemerButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddDeelnemerButton.UseVisualStyleBackColor = false;
             this.AddDeelnemerButton.Click += new System.EventHandler(this.AddDeelnemerButton_Click);
             // 
             // AddOpleidingButton
             // 
+            this.AddOpleidingButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddOpleidingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddOpleidingButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddOpleidingButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AddOpleidingButton.Location = new System.Drawing.Point(77, 302);
             this.AddOpleidingButton.Name = "AddOpleidingButton";
-            this.AddOpleidingButton.Size = new System.Drawing.Size(137, 33);
+            this.AddOpleidingButton.Size = new System.Drawing.Size(145, 33);
             this.AddOpleidingButton.TabIndex = 3;
             this.AddOpleidingButton.Text = "Add Opleiding";
-            this.AddOpleidingButton.UseVisualStyleBackColor = true;
+            this.AddOpleidingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddOpleidingButton.UseVisualStyleBackColor = false;
             this.AddOpleidingButton.Click += new System.EventHandler(this.AddOpleidingButton_Click);
             // 
             // AddDocentButton
             // 
+            this.AddDocentButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddDocentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddDocentButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddDocentButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.AddDocentButton.Location = new System.Drawing.Point(77, 341);
             this.AddDocentButton.Name = "AddDocentButton";
-            this.AddDocentButton.Size = new System.Drawing.Size(137, 33);
+            this.AddDocentButton.Size = new System.Drawing.Size(145, 33);
             this.AddDocentButton.TabIndex = 4;
             this.AddDocentButton.Text = "Add Docent";
-            this.AddDocentButton.UseVisualStyleBackColor = true;
+            this.AddDocentButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddDocentButton.UseVisualStyleBackColor = false;
             this.AddDocentButton.Click += new System.EventHandler(this.AddDocentButton_Click);
             // 
             // OpleidingComboBox
             // 
+            this.OpleidingComboBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OpleidingComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpleidingComboBox.ForeColor = System.Drawing.SystemColors.Menu;
             this.OpleidingComboBox.FormattingEnabled = true;
             this.OpleidingComboBox.Items.AddRange(new object[] {
             "Opleiding1",
             "Opleiding2",
             "Deelnemers"});
-            this.OpleidingComboBox.Location = new System.Drawing.Point(511, 29);
+            this.OpleidingComboBox.Location = new System.Drawing.Point(518, 29);
             this.OpleidingComboBox.Name = "OpleidingComboBox";
-            this.OpleidingComboBox.Size = new System.Drawing.Size(121, 28);
+            this.OpleidingComboBox.Size = new System.Drawing.Size(270, 28);
             this.OpleidingComboBox.TabIndex = 5;
-            this.OpleidingComboBox.Text = "Opleiding";
+            this.OpleidingComboBox.Text = "Opleiding1";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.OpleidingComboBox);
             this.Controls.Add(this.AddDocentButton);
