@@ -39,7 +39,7 @@ namespace AanwezigheidslijstForm
 
                     var parameterVoornaam = command.CreateParameter();
                     command.Parameters.Add(parameterVoornaam);
-                    
+
                     parameterVoornaam.ParameterName = "@Voornaam";
                     parameterVoornaam.Value = VoornaamTextBox.Text;
                     parameterVoornaam.SqlDbType = SqlDbType.NVarChar;
@@ -56,7 +56,7 @@ namespace AanwezigheidslijstForm
 
                     parameterGeboorteDatum.ParameterName = "@Geboortedatum";
                     parameterGeboorteDatum.Value = GeboorteDatumPicker.Value;
-                    parameterGeboorteDatum.SqlDbType = SqlDbType.NVarChar;
+                    parameterGeboorteDatum.SqlDbType = SqlDbType.Date;
 
                     var parameterWoonplaats = command.CreateParameter();
                     command.Parameters.Add(parameterWoonplaats);
@@ -72,9 +72,10 @@ namespace AanwezigheidslijstForm
                     parameterBadgeNummer.Value = BadgeNummerPicker.Value;
                     parameterBadgeNummer.SqlDbType = SqlDbType.Int;
 
+
+
                     connection.Open();
                     command.ExecuteNonQuery();
-                    
                 }
             }
             Close();

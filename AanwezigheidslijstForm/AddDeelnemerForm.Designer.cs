@@ -36,10 +36,8 @@
             this.GeboorteDatumTextBox = new System.Windows.Forms.TextBox();
             this.BadgeNummerPicker = new System.Windows.Forms.NumericUpDown();
             this.BadgeNummerTextBox = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.OpleidingComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.OpleidingenComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BadgeNummerPicker)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddDeelnemerButton
@@ -90,13 +88,13 @@
             this.GeboorteDatumTextBox.ReadOnly = true;
             this.GeboorteDatumTextBox.Size = new System.Drawing.Size(136, 26);
             this.GeboorteDatumTextBox.TabIndex = 6;
-            this.GeboorteDatumTextBox.Text = "GeboorteDatum";
+            this.GeboorteDatumTextBox.Text = "Geboortedatum";
             // 
             // BadgeNummerPicker
             // 
             this.BadgeNummerPicker.Location = new System.Drawing.Point(154, 295);
             this.BadgeNummerPicker.Name = "BadgeNummerPicker";
-            this.BadgeNummerPicker.Size = new System.Drawing.Size(120, 26);
+            this.BadgeNummerPicker.Size = new System.Drawing.Size(128, 26);
             this.BadgeNummerPicker.TabIndex = 7;
             // 
             // BadgeNummerTextBox
@@ -108,31 +106,21 @@
             this.BadgeNummerTextBox.TabIndex = 8;
             this.BadgeNummerTextBox.Text = "Badge Nummer";
             // 
-            // menuStrip1
+            // OpleidingenComboBox
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.OpleidingComboBox});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(394, 37);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // OpleidingComboBox
-            // 
-            this.OpleidingComboBox.Items.AddRange(new object[] {
-            "Opleiding1",
-            "Opleiding2"});
-            this.OpleidingComboBox.Name = "OpleidingComboBox";
-            this.OpleidingComboBox.Size = new System.Drawing.Size(121, 33);
-            this.OpleidingComboBox.Text = "Opleiding";
+            this.OpleidingenComboBox.FormattingEnabled = true;
+            this.OpleidingenComboBox.Location = new System.Drawing.Point(12, 12);
+            this.OpleidingenComboBox.Name = "OpleidingenComboBox";
+            this.OpleidingenComboBox.Size = new System.Drawing.Size(270, 28);
+            this.OpleidingenComboBox.TabIndex = 9;
             // 
             // AddDeelnemerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(394, 450);
+            this.Controls.Add(this.OpleidingenComboBox);
             this.Controls.Add(this.BadgeNummerTextBox);
             this.Controls.Add(this.BadgeNummerPicker);
             this.Controls.Add(this.GeboorteDatumTextBox);
@@ -141,13 +129,9 @@
             this.Controls.Add(this.AchternaamTextBox);
             this.Controls.Add(this.VoornaamTextBox);
             this.Controls.Add(this.AddDeelnemerButton);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "AddDeelnemerForm";
             this.Text = "AddDeelnemerForm";
             ((System.ComponentModel.ISupportInitialize)(this.BadgeNummerPicker)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +147,6 @@
         private System.Windows.Forms.TextBox GeboorteDatumTextBox;
         private System.Windows.Forms.NumericUpDown BadgeNummerPicker;
         private System.Windows.Forms.TextBox BadgeNummerTextBox;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripComboBox OpleidingComboBox;
+        private System.Windows.Forms.ComboBox OpleidingenComboBox;
     }
 }

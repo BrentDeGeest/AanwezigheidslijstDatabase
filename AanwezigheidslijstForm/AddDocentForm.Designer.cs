@@ -35,9 +35,9 @@
             // 
             // AddDocentButton
             // 
-            this.AddDocentButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddDocentButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.AddDocentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddDocentButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.AddDocentButton.ForeColor = System.Drawing.SystemColors.WindowText;
             this.AddDocentButton.Location = new System.Drawing.Point(48, 370);
             this.AddDocentButton.Name = "AddDocentButton";
             this.AddDocentButton.Size = new System.Drawing.Size(87, 36);
@@ -48,9 +48,9 @@
             // 
             // NaamTextBox
             // 
-            this.NaamTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.NaamTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NaamTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NaamTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.NaamTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.NaamTextBox.Location = new System.Drawing.Point(52, 75);
             this.NaamTextBox.Name = "NaamTextBox";
             this.NaamTextBox.Size = new System.Drawing.Size(316, 38);
@@ -59,9 +59,9 @@
             // 
             // BedrijfTextBox
             // 
-            this.BedrijfTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.BedrijfTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BedrijfTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BedrijfTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BedrijfTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.BedrijfTextBox.Location = new System.Drawing.Point(52, 119);
             this.BedrijfTextBox.Name = "BedrijfTextBox";
             this.BedrijfTextBox.Size = new System.Drawing.Size(316, 38);
@@ -72,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BedrijfTextBox);
             this.Controls.Add(this.NaamTextBox);

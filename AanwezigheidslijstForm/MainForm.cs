@@ -15,12 +15,12 @@ namespace AanwezigheidslijstForm
 {
     public partial class MainForm : Form
     {
-        private ICollection<Deelnemer> _deelnemers;
+        private ICollection<Deelnemers> _deelnemers;
 
         public MainForm()
         {
             InitializeComponent();
-            _deelnemers = new List<Deelnemer>();
+            _deelnemers = new List<Deelnemers>();
         }
 
         public static SqlConnection GetConnection()
@@ -42,7 +42,7 @@ namespace AanwezigheidslijstForm
                 {
                     using (var command = connection.CreateCommand())
                     {
-                        command.CommandText = $"SELECT [Id], [VoorNaam], [Achternaam] FROM [Deelnemers] e"; //WHERE e.Opleiding = OpleidingComboBox.Text";
+                        command.CommandText = $"SELECT [Id], [VoorNaam], [Achternaam] FROM [Deelnemers] e WHERE e.Opleiding = {OpleidingComboBox.SelectedText}"; //WHERE e.Opleiding = OpleidingComboBox.Text";
 
                         connection.Open();
                         using (var dataReader = command.ExecuteReader())
@@ -52,7 +52,7 @@ namespace AanwezigheidslijstForm
                             {
                                 listBox1.Items.Add(dataReader["Id"] + " - " + dataReader["VoorNaam"] + " " + dataReader["Achternaam"]);
                             }
-                            
+
                         }
                     }
                     using (var command = connection.CreateCommand())
@@ -101,6 +101,30 @@ namespace AanwezigheidslijstForm
         {
             var addDocentForm = new AddDocentForm();
             addDocentForm.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            OpleidingComboBox.Items.Clear();
+            var connectionStringSetting = ConfigurationManager.ConnectionStrings["AanwezigheidslijstDatabase"];
+            using (var connection = new SqlConnection(connectionStringSetting.ConnectionString))
+            {
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT [Opleiding] FROM [OpleidingsInformatie]";
+                    using (var dataReader = command.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            // var categoryid = dataReader.GetFieldValue <int>(0);
+
+                            OpleidingComboBox.Items.Add(dataReader["Opleiding"]);
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

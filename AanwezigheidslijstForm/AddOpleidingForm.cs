@@ -92,14 +92,14 @@ namespace AanwezigheidslijstForm
 
                     parameterStartDatum.ParameterName = "@StartDatum";
                     parameterStartDatum.Value = StartDatumPicker.Value;
-                    parameterStartDatum.SqlDbType = SqlDbType.NVarChar;
+                    parameterStartDatum.SqlDbType = SqlDbType.Date;
 
                     var parameterEindDatum = command.CreateParameter();
                     command.Parameters.Add(parameterEindDatum);
 
                     parameterEindDatum.ParameterName = "@EindDatum";
                     parameterEindDatum.Value = EindDatumPicker.Value;
-                    parameterEindDatum.SqlDbType = SqlDbType.NVarChar;
+                    parameterEindDatum.SqlDbType = SqlDbType.Date;
 
                     connection.Open();
                     command.ExecuteNonQuery();

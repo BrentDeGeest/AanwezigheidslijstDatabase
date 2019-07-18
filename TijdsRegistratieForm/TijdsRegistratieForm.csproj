@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{319CC734-0592-4A61-9F15-2F519795651A}</ProjectGuid>
+    <ProjectGuid>{0EFABEB2-A5D7-42E0-BFA4-CFBA918DCEE5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AanwezigheidslijstForm</RootNamespace>
-    <AssemblyName>AanwezigheidslijstForm</AssemblyName>
+    <RootNamespace>TijdsRegistratieForm</RootNamespace>
+    <AssemblyName>TijdsRegistratieForm</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,15 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,52 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDeelnemerForm.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDeelnemerForm.Designer.cs">
-      <DependentUpon>AddDeelnemerForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddDocentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddDocentForm.Designer.cs">
-      <DependentUpon>AddDocentForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddOpleidingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddOpleidingForm.Designer.cs">
-      <DependentUpon>AddOpleidingForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeelnemerContext.cs" />
-    <Compile Include="DeelnemerOpleidingen.cs" />
-    <Compile Include="Docenten.cs" />
-    <Compile Include="DocentenOpleidingen.cs" />
-    <Compile Include="NietOpleidingsDagen.cs" />
-    <Compile Include="Opleiding.cs" />
-    <Compile Include="Deelnemer.cs" />
-    <Compile Include="OpleidingContext.cs" />
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddDeelnemerForm.resx">
-      <DependentUpon>AddDeelnemerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddDocentForm.resx">
-      <DependentUpon>AddDocentForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddOpleidingForm.resx">
-      <DependentUpon>AddOpleidingForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -109,7 +63,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

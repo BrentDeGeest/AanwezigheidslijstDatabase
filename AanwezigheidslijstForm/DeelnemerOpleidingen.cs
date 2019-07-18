@@ -8,7 +8,7 @@ namespace AanwezigheidslijstForm
 {
     public class DeelnemerOpleidingen
     {
-        public Deelnemer Deelnemer { get; set; }
+        public Deelnemers Deelnemer { get; set; }
         public OpleidingsInformatie Opleiding { get; set; }
         public int Id { get; set; }
     }

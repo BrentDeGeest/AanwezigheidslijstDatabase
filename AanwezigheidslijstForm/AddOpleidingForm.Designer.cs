@@ -48,10 +48,10 @@
             // 
             // AddOpleidingButton
             // 
-            this.AddOpleidingButton.BackColor = System.Drawing.SystemColors.WindowText;
+            this.AddOpleidingButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.AddOpleidingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddOpleidingButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AddOpleidingButton.Location = new System.Drawing.Point(63, 382);
+            this.AddOpleidingButton.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.AddOpleidingButton.Location = new System.Drawing.Point(12, 301);
             this.AddOpleidingButton.Name = "AddOpleidingButton";
             this.AddOpleidingButton.Size = new System.Drawing.Size(85, 35);
             this.AddOpleidingButton.TabIndex = 0;
@@ -61,9 +61,9 @@
             // 
             // OpleidingsInstellingTextBox
             // 
-            this.OpleidingsInstellingTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OpleidingsInstellingTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OpleidingsInstellingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpleidingsInstellingTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OpleidingsInstellingTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OpleidingsInstellingTextBox.Location = new System.Drawing.Point(12, 12);
             this.OpleidingsInstellingTextBox.Name = "OpleidingsInstellingTextBox";
             this.OpleidingsInstellingTextBox.Size = new System.Drawing.Size(311, 31);
@@ -72,9 +72,9 @@
             // 
             // OpleidingTextBox
             // 
-            this.OpleidingTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OpleidingTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OpleidingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpleidingTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OpleidingTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OpleidingTextBox.Location = new System.Drawing.Point(12, 49);
             this.OpleidingTextBox.Name = "OpleidingTextBox";
             this.OpleidingTextBox.Size = new System.Drawing.Size(311, 31);
@@ -83,9 +83,9 @@
             // 
             // ContactPersoonTextBox
             // 
-            this.ContactPersoonTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ContactPersoonTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ContactPersoonTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContactPersoonTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ContactPersoonTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ContactPersoonTextBox.Location = new System.Drawing.Point(12, 86);
             this.ContactPersoonTextBox.Name = "ContactPersoonTextBox";
             this.ContactPersoonTextBox.Size = new System.Drawing.Size(311, 31);
@@ -94,9 +94,9 @@
             // 
             // OpleidingsPlaatsTextBox
             // 
-            this.OpleidingsPlaatsTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OpleidingsPlaatsTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OpleidingsPlaatsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpleidingsPlaatsTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OpleidingsPlaatsTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OpleidingsPlaatsTextBox.Location = new System.Drawing.Point(12, 123);
             this.OpleidingsPlaatsTextBox.Name = "OpleidingsPlaatsTextBox";
             this.OpleidingsPlaatsTextBox.Size = new System.Drawing.Size(311, 31);
@@ -105,9 +105,9 @@
             // 
             // ReferentieTextBox
             // 
-            this.ReferentieTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ReferentieTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ReferentieTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReferentieTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ReferentieTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ReferentieTextBox.Location = new System.Drawing.Point(12, 160);
             this.ReferentieTextBox.Name = "ReferentieTextBox";
             this.ReferentieTextBox.Size = new System.Drawing.Size(311, 31);
@@ -116,9 +116,9 @@
             // 
             // OeNumeric
             // 
-            this.OeNumeric.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OeNumeric.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OeNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OeNumeric.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OeNumeric.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OeNumeric.Location = new System.Drawing.Point(203, 197);
             this.OeNumeric.Name = "OeNumeric";
             this.OeNumeric.Size = new System.Drawing.Size(120, 26);
@@ -126,9 +126,9 @@
             // 
             // OpleidingsCodeNumeric
             // 
-            this.OpleidingsCodeNumeric.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OpleidingsCodeNumeric.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OpleidingsCodeNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpleidingsCodeNumeric.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OpleidingsCodeNumeric.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OpleidingsCodeNumeric.Location = new System.Drawing.Point(203, 229);
             this.OpleidingsCodeNumeric.Name = "OpleidingsCodeNumeric";
             this.OpleidingsCodeNumeric.Size = new System.Drawing.Size(120, 26);
@@ -144,9 +144,9 @@
             // 
             // StartDatumTextBox
             // 
-            this.StartDatumTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.StartDatumTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.StartDatumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StartDatumTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.StartDatumTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.StartDatumTextBox.Location = new System.Drawing.Point(355, 123);
             this.StartDatumTextBox.Name = "StartDatumTextBox";
             this.StartDatumTextBox.ReadOnly = true;
@@ -156,9 +156,9 @@
             // 
             // EindDatumTextBox
             // 
-            this.EindDatumTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.EindDatumTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.EindDatumTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EindDatumTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.EindDatumTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.EindDatumTextBox.Location = new System.Drawing.Point(355, 196);
             this.EindDatumTextBox.Name = "EindDatumTextBox";
             this.EindDatumTextBox.ReadOnly = true;
@@ -176,9 +176,9 @@
             // 
             // OeNummerTextBox
             // 
-            this.OeNummerTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OeNummerTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OeNummerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OeNummerTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OeNummerTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OeNummerTextBox.Location = new System.Drawing.Point(13, 198);
             this.OeNummerTextBox.Name = "OeNummerTextBox";
             this.OeNummerTextBox.ReadOnly = true;
@@ -188,9 +188,9 @@
             // 
             // OpleidingsCodeTextBox
             // 
-            this.OpleidingsCodeTextBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.OpleidingsCodeTextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.OpleidingsCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpleidingsCodeTextBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.OpleidingsCodeTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OpleidingsCodeTextBox.Location = new System.Drawing.Point(12, 229);
             this.OpleidingsCodeTextBox.Name = "OpleidingsCodeTextBox";
             this.OpleidingsCodeTextBox.ReadOnly = true;
@@ -202,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.OpleidingsCodeTextBox);
             this.Controls.Add(this.OeNummerTextBox);
