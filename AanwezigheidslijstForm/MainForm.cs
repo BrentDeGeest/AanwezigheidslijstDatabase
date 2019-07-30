@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
-
+using System.Diagnostics;
 
 namespace AanwezigheidslijstForm
 {
@@ -93,7 +93,7 @@ namespace AanwezigheidslijstForm
 
         private void AddOpleidingButton_Click(object sender, EventArgs e)
         {
-            var addOpleidingForm = new AddOpleidingForm();
+            var addOpleidingForm = new OpleidingForm();
             addOpleidingForm.Show();
         }
 
@@ -105,8 +105,101 @@ namespace AanwezigheidslijstForm
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            OpleidingComboBox.Items.Clear();
+            ToonOpleidingen();
+        }
+
+        
+
+        private void AddOplBut_Click(object sender, EventArgs e)
+        {
+            /*
+              string firstName="Name",
+        lastName="LastName",
+        userName="UserName",
+        password="123",
+        gender="Male",
+        contact="Contact";
+        int age=26; 
+
+        // Query to be executed
+        string query = "Insert Into dbo.regist (FirstName, Lastname, Username, Password, Age, Gender,Contact) " + 
+                   "VALUES (@FN, @LN, @UN, @Pass, @Age, @Gender, @Contact) ";
+
+        // instance connection and command
+        using(SqlConnection cn = new SqlConnection(connectionString))
+        using(SqlCommand cmd = new SqlCommand(query, cn))
+        {
+        // add parameters and their values
+        cmd.Parameters.Add("@FN", System.Data.SqlDbType.NVarChar, 100).Value = firstName;
+        cmd.Parameters.Add("@LN", System.Data.SqlDbType.NVarChar, 100).Value = lastName;
+        cmd.Parameters.Add("@UN", System.Data.SqlDbType.NVarChar, 100).Value = userName;
+        cmd.Parameters.Add("@Pass", System.Data.SqlDbType.NVarChar, 100).Value = password;
+        cmd.Parameters.Add("@Age", System.Data.SqlDbType.Int).Value = age;
+        cmd.Parameters.Add("@Gender", System.Data.SqlDbType.NVarChar, 100).Value = gender;
+        cmd.Parameters.Add("@Contact", System.Data.SqlDbType.NVarChar, 100).Value = contact;
+
+        // open connection, execute command and close connection
+        cn.Open();
+        cmd.ExecuteNonQuery();
+        cn.Close();
+              
+             */
+
+
+
+
+
+
+
+            string OpleidingsInstelling = OpleidingsInstellingTextBox.Text,
+                   Opleiding = OpleidingTextBox.Text,
+                   ContactPersoon = ContactPersoonTextBox.Text,
+                   Opleidingsplaats = OpleidingsPlaatsTextBox.Text,
+                   ReferentieOpleidingsplaats = ReferentieTextBox.Text;
+
+            int OeNummer = (int)OeNumeric.Value,
+                Opleidingscode = (int)OpleidingsCodeNumeric.Value;
+
+            DateTime StartDatum = StartDatumPicker.Value,
+                     EindDatum = EindDatumPicker.Value;
+
+            string query = $"INSERT INTO [OpleidingsInformatie] ([Opleidingsinstelling], [Opleiding], [Contactpersoon], [Opleidingsplaats], [ReferentieOpleidingsplaats], [OeNummer], [Opleidingscode], [StartDatum], [EindDatum]) VALUES               (@Opleidingsinstelling, @Opleiding, @Contactpersoon, @Opleidingsplaats, @ReferentieOpleidingsplaats, @OeNummer, @Opleidingscode, @StartDatum, @EindDatum)";
+
             var connectionStringSetting = ConfigurationManager.ConnectionStrings["AanwezigheidslijstDatabase"];
+
+            using (SqlConnection cn = new SqlConnection(connectionStringSetting.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                cmd.Parameters.Add("@Opleidingsinstelling", SqlDbType.NVarChar, 100).Value = OpleidingsInstelling;
+                cmd.Parameters.Add("@Opleiding", SqlDbType.NVarChar, 100).Value = Opleiding;
+                cmd.Parameters.Add("@Contactpersoon", SqlDbType.NVarChar, 100).Value = ContactPersoon;
+                cmd.Parameters.Add("@Opleidingsplaats", SqlDbType.NVarChar, 100).Value = Opleidingsplaats;
+                cmd.Parameters.Add("@ReferentieOpleidingsplaats", SqlDbType.NVarChar, 100).Value = ReferentieOpleidingsplaats;
+                cmd.Parameters.Add("@OeNummer", SqlDbType.Int).Value = OeNummer;
+                cmd.Parameters.Add("@Opleidingscode", SqlDbType.Int).Value = Opleidingscode;
+                cmd.Parameters.Add("@StartDatum", SqlDbType.DateTime).Value = StartDatum;
+                cmd.Parameters.Add("@EindDatum", SqlDbType.DateTime).Value = EindDatum;
+
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                ToonOpleidingen();
+            }
+        }
+        private void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opleiding = OpleidingList.SelectedItem.ToString();
+            Debug.WriteLine(opleiding);
+            string query = $"Select [Opleiding] from [opleidingsinformatie] where Opleiding = '{opleiding}'";
+
+            
+        }
+
+        private void ToonOpleidingen()
+        {
+            var connectionStringSetting = ConfigurationManager.ConnectionStrings["AanwezigheidslijstDatabase"];
+
+            OpleidingList.Items.Clear();
             using (var connection = new SqlConnection(connectionStringSetting.ConnectionString))
             {
                 connection.Open();
@@ -117,14 +210,16 @@ namespace AanwezigheidslijstForm
                     {
                         while (dataReader.Read())
                         {
-                            // var categoryid = dataReader.GetFieldValue <int>(0);
-
-                            OpleidingComboBox.Items.Add(dataReader["Opleiding"]);
+                            OpleidingList.Items.Add(dataReader["Opleiding"]);
                         }
                     }
                 }
-
             }
+        }
+
+        private void DelOplBut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

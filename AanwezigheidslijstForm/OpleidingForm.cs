@@ -13,9 +13,9 @@ using System.Data.SqlClient;
 
 namespace AanwezigheidslijstForm
 {
-    public partial class AddOpleidingForm : Form
+    public partial class OpleidingForm : Form
     {
-        public AddOpleidingForm()
+        public OpleidingForm()
         {
             InitializeComponent();
         }
@@ -111,6 +111,91 @@ namespace AanwezigheidslijstForm
         private static void Connection_StateChange(object sender, System.Data.StateChangeEventArgs e)
         {
             Console.WriteLine("\nDB connection status: " + e.CurrentState + "\n");
+        }
+
+        private void EindDatumPicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpleidingsPlaatsTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpleidingTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EindDatumTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpleidingsCodeNumeric_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OeNumeric_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContactPersoonTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Toevoegen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartDatumTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddOpleidingButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReferentieTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartDatumPicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OeNummerTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpleidingsInstellingTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OpleidingsCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddOpleidingButton_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

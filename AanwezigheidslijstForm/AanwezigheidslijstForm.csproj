@@ -66,11 +66,11 @@
     <Compile Include="AddDocentForm.Designer.cs">
       <DependentUpon>AddDocentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddOpleidingForm.cs">
+    <Compile Include="OpleidingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddOpleidingForm.Designer.cs">
-      <DependentUpon>AddOpleidingForm.cs</DependentUpon>
+    <Compile Include="OpleidingForm.Designer.cs">
+      <DependentUpon>OpleidingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DeelnemerContext.cs" />
     <Compile Include="DeelnemerOpleidingen.cs" />
@@ -94,8 +94,8 @@
     <EmbeddedResource Include="AddDocentForm.resx">
       <DependentUpon>AddDocentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddOpleidingForm.resx">
-      <DependentUpon>AddOpleidingForm.cs</DependentUpon>
+    <EmbeddedResource Include="OpleidingForm.resx">
+      <DependentUpon>OpleidingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
